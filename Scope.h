@@ -2,6 +2,16 @@
 // Created by 郑虎 on 15 年 五月. 4..
 //
 
+/*
+ * A scope is a scope
+ * It does not support evaluation, because it is an environment
+ * A scope should have a name, to avoid conflict
+ * Scope should support inheritance, or copy
+ * And also merging, or force passing
+ */
+
+// TODO: we must have closure in this language...
+
 #ifndef SCOPEBASEDLANGUAGE_SCOPE_H
 #define SCOPEBASEDLANGUAGE_SCOPE_H
 
@@ -23,7 +33,7 @@ public:
 
     Scope();
     ~Scope();
-    void addToken(Token newToken); // TODO: maybe as an operator instead of a function
+    void addToken(std::string identifier, Token newToken); // TODO: maybe as an operator instead of a function
     Scope mergeWith(Scope anotherScope);
 
 };

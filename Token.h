@@ -5,6 +5,7 @@
 #ifndef SCOPEBASEDLANGUAGE_TOKEN_H
 #define SCOPEBASEDLANGUAGE_TOKEN_H
 
+#include "Types.h"
 
 class Token {
 
@@ -17,6 +18,9 @@ public:
 
 
     ~Token();
+
+    NUM_TYPE evaluateSelf();
+
 
 };
 

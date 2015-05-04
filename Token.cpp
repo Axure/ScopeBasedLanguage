@@ -9,3 +9,7 @@
 
 
 
+NUM_TYPE Token::evaluateSelf() {
+
+
+}
