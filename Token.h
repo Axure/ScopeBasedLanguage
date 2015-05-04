@@ -6,6 +6,8 @@
 #define SCOPEBASEDLANGUAGE_TOKEN_H
 
 #include "Types.h"
+#include <iosfwd>
+#include <string>
 
 class Token {
 
