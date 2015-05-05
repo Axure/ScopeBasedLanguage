@@ -5,6 +5,8 @@
 #ifndef SCOPEBASEDLANGUAGE_EXPRESSION_H
 #define SCOPEBASEDLANGUAGE_EXPRESSION_H
 
+#include "Scope.h"
+#include "Types.h"
 
 class Expression {
 
@@ -12,6 +14,8 @@ private:
 
 public:
 
+    
+    INT eval_expression(Scope envScope);
 
 };
 

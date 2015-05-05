@@ -7,6 +7,8 @@
 
 //#include <
 #include "Token.h"
+#include "Expression.h"
+// A token stream can involve multiple expressions.
 
 class TokenStream {
 
@@ -19,6 +21,7 @@ public:
     TokenStream(std::string inString);
     ~TokenStream();
     Token nextToken(); // TODO: a new function, that not only outputs the next token, but also jumps to the end position.
+
 
 
 };

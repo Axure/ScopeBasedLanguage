@@ -3,3 +3,14 @@
 //
 
 #include "Expression.h"
+
+INT Scope::eval_expression(Scope envScope) {
+
+
+
+
+
+
+
+
+}
