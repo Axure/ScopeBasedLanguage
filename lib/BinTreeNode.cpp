@@ -3,3 +3,8 @@
 //
 
 #include "BinTreeNode.h"
+
+template <class T>
+BinTreeNode<T>::BinTreeNode() {
+
+}

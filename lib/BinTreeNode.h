@@ -7,16 +7,14 @@
 
 template <class T>
 class BinTreeNode {
+    private:
+        T content;
+        BinTreeNode* pLeft, pRight;
+    public:
+        BinTreeNode();
 
-private:
-    T content;
-    BinTreeNode* pLeft, pRight;
-public:
-
-    static void appendToLeft(BinTreeNode* root, T content);
-    void appendToLeft(T content);
-
-
+        static void appendToLeft(BinTreeNode* root, T content);
+        void appendToLeft(T content);
 };
 
 
