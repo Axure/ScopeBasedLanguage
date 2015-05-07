@@ -8,8 +8,8 @@
 #include <vector>
 
 #include "Token.h"
-#include "Paragraph.h"
-#include "Scope.h"
+//#include "Paragraph.h"
+//#include "Scope.h"
 #include "Types.h"
 
 class Function {
@@ -18,12 +18,13 @@ class Function {
 private:
     std::string name;
     std::vector<std::string> parameters;
-    Paragraph body;
+//    Paragraph body;
 
 public:
 
-    INT evaluateSelf(Scope scope); // TODO: figure out why macro substitution does not work here.
-
+    Function(std::string inString);
+//    INT evaluateSelf(Scope scope); // TODO: figure out why macro substitution does not work here.
+    std::string toString();
 
 
 };
