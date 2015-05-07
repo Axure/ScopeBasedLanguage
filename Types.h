@@ -21,14 +21,14 @@ public:
     INT(int a);
     ~INT();
 //    int operator = ();
-    INT &operator + (const INT &a, const INT &b);
-    INT &operator - (const INT &a, const INT &b);
-    INT &operator * (const INT &a, const INT &b);
-    INT &operator / (const INT &a, const INT &b);
-    INT &operator % (const INT &a, const INT &b);
-    INT &operator ^ (const INT &a, const INT &b);
-    INT &operator = (const INT &a);
-    std::ostream &operator << (std::ostream os, const INT &a);
+    friend INT &operator + (const INT &a, const INT &b);
+    friend INT &operator - (const INT &a, const INT &b);
+    friend INT &operator * (const INT &a, const INT &b);
+    friend INT &operator / (const INT &a, const INT &b);
+    friend INT &operator % (const INT &a, const INT &b);
+    friend INT &operator ^ (const INT &a, const INT &b);
+//    friend INT &operator = (const INT &a);
+    std::ostream &operator << (std::ostream &os);
 
 };
 // TODO: Override the = operator for NUM_TYPE, and all the other operators... For built-in high precision...

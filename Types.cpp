@@ -16,50 +16,50 @@ INT::~INT() {
 //    return this->self;
 //}
 
-INT &INT::operator + (const INT &a, const INT &b) {
+INT &operator + (const INT &a, const INT &b) {
 
     INT *_result = new INT(a.self + b.self);
     return (*_result);
 }
 
-INT &INT::operator - (const INT &a, const INT &b) {
+INT &operator - (const INT &a, const INT &b) {
 
     INT *_result = new INT(a.self - b.self);
     return (*_result);
 }
 
-INT &INT::operator * (const INT &a, const INT &b) {
+INT &operator * (const INT &a, const INT &b) {
 
     INT *_result = new INT(a.self * b.self);
     return (*_result);
 }
 
-INT &INT::operator / (const INT &a, const INT &b) {
+INT &operator / (const INT &a, const INT &b) {
 
     INT *_result = new INT(a.self / b.self);
     return (*_result);
 }
 
-INT &INT::operator % (const INT &a, const INT &b) {
+INT &operator % (const INT &a, const INT &b) {
 
     INT *_result = new INT(a.self % b.self);
     return (*_result);
 }
 
-INT &INT::operator ^ (const INT &a, const INT &b) {
+INT &operator ^ (const INT &a, const INT &b) {
 
     INT *_result = new INT((int)std::pow(a.self, b.self));
     return (*_result);
 }
 
-INT &INT::operator = (const INT &a) {
+//INT &INT::operator = (const INT &a) {
+//
+//    INT *_result = new INT(a.self);
+//    return (*_result);
+//}
 
-    INT *_result = new INT(a.self);
-    return (*_result);
-}
-
-std::ostream &INT::operator << (std::ostream &os, const INT &a) {
-    os << a.self;
+std::ostream &INT::operator << (std::ostream &os) {
+    os << this->self;
     return os;
 }
 
