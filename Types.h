@@ -28,7 +28,7 @@ public:
     friend INT &operator % (const INT &a, const INT &b);
     friend INT &operator ^ (const INT &a, const INT &b);
 //    friend INT &operator = (const INT &a);
-    std::ostream &operator << (std::ostream &os);
+    friend std::ostream &operator << (std::ostream &os, const INT &a);
 
 };
 // TODO: Override the = operator for NUM_TYPE, and all the other operators... For built-in high precision...

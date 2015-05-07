@@ -58,8 +58,8 @@ INT &operator ^ (const INT &a, const INT &b) {
 //    return (*_result);
 //}
 
-std::ostream &INT::operator << (std::ostream &os) {
-    os << this->self;
+std::ostream &operator << (std::ostream &os, const INT &a) {
+    os << a.self;
     return os;
 }
 
