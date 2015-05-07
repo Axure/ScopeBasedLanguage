@@ -4,7 +4,7 @@
 
 #include "Expression.h"
 
-INT Scope::eval_expression(Scope envScope) {
+INT Expression::eval_expression(Scope envScope) {
 
 
 

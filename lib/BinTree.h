@@ -11,7 +11,7 @@
 template <class T, class A = std::allocator<T>>
 class BinTree {
 private:
-    T &_current;
+    T &_current;[]
 
 
 

@@ -39,6 +39,8 @@ public:
 
     INT evaluateSelf();
 
+    static bool isToken();
+
 
 };
 

@@ -54,3 +54,8 @@ INT Token::evaluateSelf() {
 
 
 }
+
+// Among all things, speed is eternal.
+static bool Token::isToken() {
+
+}
