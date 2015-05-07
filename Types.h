@@ -27,6 +27,9 @@ public:
     friend INT &operator / (const INT &a, const INT &b);
     friend INT &operator % (const INT &a, const INT &b);
     friend INT &operator ^ (const INT &a, const INT &b);
+    friend bool operator == (const int &a, const INT &b);
+    friend bool operator == (const INT &a, const int &b);
+    friend bool operator == (const INT &a, const INT &b);
 //    friend INT &operator = (const INT &a);
     friend std::ostream &operator << (std::ostream &os, const INT &a);
 

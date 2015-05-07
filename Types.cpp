@@ -52,14 +52,30 @@ INT &operator ^ (const INT &a, const INT &b) {
     return (*_result);
 }
 
+bool operator == (const INT &a, const INT &b) {
+
+    return (a.self == b.self);
+}
+
+bool operator == (const int &a, const INT &b) { // TODO: use macro here for a general type.
+
+    return (a == b.self);
+}
+
+bool operator == (const INT &a, const int &b) {
+
+    return (a.self == b);
+}
+
 //INT &INT::operator = (const INT &a) {
 //
 //    INT *_result = new INT(a.self);
 //    return (*_result);
 //}
 
+// Why inline this function would cause it not found?
 std::ostream &operator << (std::ostream &os, const INT &a) {
-    os << a.self;
+    os << a.self; // Why at first the operator was not able to access private members of a?
     return os;
 }
 
