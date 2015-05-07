@@ -30,14 +30,16 @@ add_executable(paragraph ${PARAGRAPH_CLASS})
 
 set(BINTREE_TEST test/BinTreeTest.cpp)
 set(BINTREE_NODE_TEST test/BinTreeNodeTest.cpp)
-
+set(FUNCTION_TEST test/FunctionTest.cpp)
+set(TYPE_TEST test/TypeTest.cpp)
 
 
 add_executable(sbl_bintree_test ${BINTREE_TEST} ${LIB_BINTREE_CLASS})
-
 add_executable(sbl_bintree_node_test ${BINTREE_NODE_TEST}  ${LIB_BINTREE_NODE_CLASS})
+add_executable(sbl_function_test ${FUNCTION_TEST} ${FUNCTION_CLASS})
+add_executable(sbl_type_test ${TYPE_TEST} ${TYPE_DEFINITION})
 
 #add_executable(sbl_bintree_node_test ${BINTREE_NODE_TEST} lib/BinTreeNode.cpp) # This is not valid?
-add_executable(sbl_func_test ${SOURCE_FILES} Paragraph.cpp Paragraph.h Sentence.cpp Sentence.h Token.cpp Token.h Scope.cpp Scope.h Types.h Function.cpp Function.h Types.cpp Expression.cpp Expression.h TokenStream.cpp TokenStream.h lib/BinTreeNode.cpp lib/BinTreeNode.h lib/BinTreeNode.cpp lib/BinTreeNode.h)
+#add_executable(sbl_func_test ${SOURCE_FILES} Paragraph.cpp Paragraph.h Sentence.cpp Sentence.h Token.cpp Token.h Scope.cpp Scope.h Types.h Function.cpp Function.h Types.cpp Expression.cpp Expression.h TokenStream.cpp TokenStream.h lib/BinTreeNode.cpp lib/BinTreeNode.h lib/BinTreeNode.cpp lib/BinTreeNode.h)
 
 add_executable(sbl_compiler ${SOURCE_FILES} Paragraph.cpp Paragraph.h Sentence.cpp Sentence.h Token.cpp Token.h Scope.cpp Scope.h Types.h Function.cpp Function.h Types.cpp Expression.cpp Expression.h TokenStream.cpp TokenStream.h lib/BinTreeNode.cpp lib/BinTreeNode.h lib/BinTreeNode.cpp lib/BinTreeNode.h)
